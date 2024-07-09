@@ -49,7 +49,7 @@ if (!isset($_SESSION['status']) && !isset($_SESSION['username'])) {
                 <a class="btn btn-warning btn-sm" href='edit.php?kd_matpel=<?= $row_matpel['kd_matpel'] ?>'>
                   Edit
                 </a>
-                <a class="btn btn-danger btn-sm" href='delete.php?kd_matpel=<?= $row_matpel['kd_matpel'] ?>'>
+                <a class="btn btn-danger btn-sm" href='delete.php?kd_matpel=<?= $row_matpel['kd_matpel'] ?>' onclick="return confirm('Anda yakin ingin menghapus data ini?');">
                   Delete
                 </a>
               </td>

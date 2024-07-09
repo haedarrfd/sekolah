@@ -51,7 +51,7 @@ if (!isset($_SESSION['status']) && !isset($_SESSION['username'])) {
                 <a class="btn btn-warning btn-sm" href='edit.php?nis=<?= $row_siswa['nis'] ?>'>
                   Edit
                 </a>
-                <a class="btn btn-danger btn-sm" href='delete.php?nis=<?= $row_siswa['nis'] ?>'>
+                <a class="btn btn-danger btn-sm" href='delete.php?nis=<?= $row_siswa['nis'] ?>' onclick="return confirm('Anda yakin ingin menghapus data ini?');">
                   Delete
                 </a>
               </td>

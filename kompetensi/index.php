@@ -43,7 +43,7 @@ if (!isset($_SESSION['status']) && !isset($_SESSION['username'])) {
                 <a class="btn btn-warning btn-sm" href='edit.php?kd_kompetensi=<?= $row_kompetensi['kd_kompetensi'] ?>'>
                   Edit
                 </a>
-                <a class="btn btn-danger btn-sm" href='delete.php?kd_kompetensi=<?= $row_kompetensi['kd_kompetensi'] ?>'>
+                <a class="btn btn-danger btn-sm" href='delete.php?kd_kompetensi=<?= $row_kompetensi['kd_kompetensi'] ?>' onclick="return confirm('Anda yakin ingin menghapus data ini?');">
                   Delete
                 </a>
               </td>
